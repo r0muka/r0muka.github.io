@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna Khakassia — Концепт-артбук и портфолио</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <div class="top-bar">
+                <span class="badge">Digital Concept Artbook • 2D Illustration</span>
+                <button id="themeToggle" class="btn-outline">☀️ Дневная степь</button>
+            </div>
+            <div class="hero-content">
+                <div class="moon-emblem" aria-hidden="true">
+                    <svg viewBox="0 0 100 100" width="76" height="76">
+                        <circle cx="50" cy="50" r="42" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="6 4"/>
+                        <path d="M56 18 A32 32 0 1 0 82 64 A26 26 0 1 1 56 18 Z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <h1>Luna Khakassia</h1>
+                <p class="subtitle">Визуализация материальной культуры и мифологии Саяно-Алтая XVIII–XIX веков в стилистике современной анимации</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Блок об авторе и хобби -->
+        <section class="card author-card">
+            <h2>Об авторе и проекте</h2>
+            <p>
+                Привет! Меня зовут <strong>Егор</strong>, я студент направления <em>«Прикладная информатика в искусстве и интерактивных медиа»</em>. 
+                Моё главное увлечение — <strong>2D-концепт-арт, цифровая иллюстрация и визуальный сторителлинг</strong> в Clip Studio Paint.
+            </p>
+            <p>
+                <strong>«Luna Khakassia» (Луна Хакасии)</strong> — мой независимый цифровой артбук. В нём я переосмысляю хакасский героический эпос 
+                (<em>Алыптығ нымах</em>), этнографические детали традиционного костюма и древние предания через призму современного аниме-концепта.
+            </p>
+            <div class="tags">
+                <span>Clip Studio Paint</span>
+                <span>2D Concept Art</span>
+                <span>Фольклор Хакасии</span>
+                <span>Дизайн персонажей</span>
+            </div>
+        </section>
+
+        <!-- Интерактивный каталог концептов -->
+        <section class="concepts-section">
+            <div class="section-header">
+                <h2>Разделы артбука</h2>
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">Все разделы</button>
+                    <button class="filter-btn" data-filter="characters">Персонажи</button>
+                    <button class="filter-btn" data-filter="costume">Костюм и быт</button>
+                    <button class="filter-btn" data-filter="lore">Мифология</button>
+                </div>
+            </div>
+
+            <div class="grid" id="conceptsGrid">
+                <article class="card concept-item" data-category="characters">
+                    <span class="cat-label">Персонажи</span>
+                    <h3>Алып-хыс (Дева-богатырка)</h3>
+                    <p>Женский воинский архетип из героических сказаний. В дизайне сочетаются пластика боя, строгий силуэт степного всадника и исторические элементы защиты.</p>
+                </article>
+
+                <article class="card concept-item" data-category="characters">
+                    <span class="cat-label">Персонажи</span>
+                    <h3>Девочка и Снежный Барс</h3>
+                    <p>Концепт юной героини и ирбиса — священного духа-хранителя горных хребтов Саян, связывающего мир людей с миром предков.</p>
+                </article>
+
+                <article class="card concept-item" data-category="costume">
+                    <span class="cat-label">Костюм и быт</span>
+                    <h3>Сигедек и Сикпен</h3>
+                    <p>Детальная проработка традиционной хакасской верхней одежды: вышитые наплечники, орнаменты, нагрудные украшения пого и аутентичный крой XVIII–XIX веков.</p>
+                </article>
+
+                <article class="card concept-item" data-category="lore">
+                    <span class="cat-label">Мифология</span>
+                    <h3>Три мира и родовые тотемы</h3>
+                    <p>Визуальная карта мироустройства: Верхний мир небесных божеств, Средний мир степей и табуированные тропы Нижнего мира.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Интерактивный свиток лора -->
+        <section class="card lore-box">
+            <h2>Свиток этнографических заметок</h2>
+            <p id="loreText">Нажми на кнопку ниже, чтобы открыть заметку из материалов к артбуку «Luna Khakassia».</p>
+            <button id="loreBtn" class="btn-primary">Открыть следующую заметку</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Luna Khakassia • Персональный проект для лабораторной работы № 2</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
